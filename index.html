@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <title>soPACK - Code Compressor</title>
+  <meta charset="utf-8">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!--[if IE]>
+      <link rel="stylesheet" href="gh-fork-ribbon.ie.css" />
+  <![endif]-->
+</head>
+<body>
+
+<div id="container">
+  <a href="./">
+    <div id="logo"></div>
+  </a>
+  <form class="disabled" id="form" method="post">
+    <p class="panel">
+      <label class="big">Input<a href="javascript:void(0);" id="clear-all">Clear</a>
+        <select id="language">
+          <option value="css">CSS</option>
+          <option value="html">HTML</option>
+          <option value="javascript" selected>Javascript</option>
+          <option value="php">PHP</option>
+          <option value="xml">XML</option>
+        </select>
+      </label><br>
+      <div id="input_div" class="editor"></div>
+    </p>
+    <p id="controls">
+      <label id="base62label" for="base62"><input type="checkbox" id="base62" name="base62" value="1" disabled> Base62 encode</label>
+      <label id="shrinklabel" for="shrink"><input type="checkbox" id="shrink" name="shrink" value="1"> Shrink variables</label>
+    </p>
+    <p class="panel">
+      <label class="big">Output<a href="javascript:void(0);" id="copy">copy</a></label><br>
+      <div id="output_div" class="editor"></div>
+    </p>
+    <p id="message" class="error">ready</p>
+      <p class="form-buttons" id="input-buttons">
+      <button type="button" id="pack-script">Pack</button>
+    </p>
+    <p class="credit">powered by <a href="http://dean.edwards.name/packer/" title="Packer v3.0 by Dean Edwards" target="_blank">Packer v3.0</a> and <a href="http://ace.ajax.org" title="Ace Editor" target="_blank">Ace Editor</a></p>
+  </form>
+</div>
+
+<!-- TOP RIGHT RIBBON: START COPYING HERE -->
+<div class="github-fork-ribbon-wrapper right">
+    <div class="github-fork-ribbon">
+        <a href="https://github.com/soDEVch/soPACK" target="github">Fork me on GitHub</a>
+    </div>
+</div>
+<!-- TOP RIGHT RIBBON: END COPYING HERE -->
+
+
+<script src="assets/ace/ace.js"></script>
+<script src="assets/js/script.min.js"></script> 
+</body>
+</html>

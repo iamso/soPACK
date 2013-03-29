@@ -1,0 +1,32 @@
+.rounded-corners (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+.box-shadows (@param) {
+  -webkit-box-shadow: @param;
+  -moz-box-shadow: @param;
+  -ms-box-shadow: @param;
+  -o-box-shadow: @param;
+  box-shadow: @param;
+}
+
+.gradients (@top: #fff, @bottom: #000) {
+  background: @top; /* Old browsers */
+	background: -moz-linear-gradient(top, @top 0%, @bottom 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@top), color-stop(100%,@bottom)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, @top 0%,@bottom 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, @top 0%,@bottom 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, @top 0%,@bottom 100%); /* IE10+ */
+	background: linear-gradient(to bottom, @top 0%,@bottom 100%); /* W3C */
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@top, endColorstr=@bottom,GradientType=0 ); /* IE6-9 */
+}
+.set-opacity (@param: 1) {
+  -webkit-opacity: @param;
+  -moz-opacity: @param;
+  -ms-opacity: @param;
+  -o-opacity: @param;
+  opacity: @param;
+}
