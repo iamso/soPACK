@@ -74,5 +74,6 @@ $(function(){
     }
     input.getSession().setMode("ace/mode/"+$(this).val());
     output.getSession().setMode("ace/mode/"+$(this).val());
+    input.focus();
   });
 });
