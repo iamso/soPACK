@@ -3,6 +3,8 @@ soPACK
 
 Online Code Compressor powered by [Packer v3.0] and [Ace Editor]
 
+[See it in Action!]
+
 
 Usage
 -----
@@ -48,4 +50,5 @@ soPACK is a project of [soDEV.ch].
   [jQuery]: http://jquery.com
   [Packer v3.0]: http://dean.edwards.name/packer/ "Packer v3.0 by Dean Edwards"
   [ZeroClipboard]: http://www.steamdev.com/zclip/
+  [See it in Action!]: http://pack.sodev.ch
   [soDEV.ch]: http://soDEV.ch "Check out soDEV.ch"
